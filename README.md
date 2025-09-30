@@ -163,13 +163,7 @@ class _MyAppState extends State<MyApp> {
 ## Dependencies
 
 This plugin uses the following Android dependencies:
-- `com.github.gzu-liyujiang.Android_CN_OAID:OAID_ASUS:3.0.3`
-- `com.github.gzu-liyujiang.Android_CN_OAID:OAID_BUN:3.0.3`
-- `com.github.gzu-liyujiang.Android_CN_OAID:OAID_HEYTAP:3.0.3`
-- `com.github.gzu-liyujiang.Android_CN_OAID:OAID_SAMSUNG:3.0.3`
-- `com.github.gzu-liyujiang.Android_CN_OAID:OAID_UODIS:3.0.3`
-- `com.github.gzu-liyujiang.Android_CN_OAID:OAID_ZUI:3.0.3`
-- `com.github.gzu-liyujiang.Android_CN_OAID:OAID_IMPL:3.0.3`
+- `com.gitee.li_yu_jiang:Android_CN_OAID:4.1.0`
 
 ## License
 
