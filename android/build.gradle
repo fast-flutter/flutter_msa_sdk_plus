@@ -1,0 +1,62 @@
+group 'com.example.flutter_msa_sdk_plus'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 21
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'armeabi-v7a', 'x86', 'arm64-v8a', 'x86_64', 'armeabi'
+        }
+        packagingOptions {
+            doNotStrip "*/armeabi-v7a/*.so"
+            doNotStrip "*/x86/*.so"
+            doNotStrip "*/arm64-v8a/*.so"
+            doNotStrip "*/x86_64/*.so"
+            doNotStrip "armeabi.so"
+        }
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_ASUS:3.0.3' //华硕
+    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_BUN:3.0.3' //中兴、卓易
+    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_HEYTAP:3.0.3' //欧珀、一加
+    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_SAMSUNG:3.0.3' //三星
+    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_UODIS:3.0.3' //华为
+    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_ZUI:3.0.3' //联想、摩托罗拉
+    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_IMPL:3.0.3' //具体实现
+    implementation 'androidx.annotation:annotation:1.1.0'
+}
