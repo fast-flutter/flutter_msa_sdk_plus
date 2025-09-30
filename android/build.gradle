@@ -23,6 +23,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+    namespace 'com.adtalos.flutter.msa.sdk'
     compileSdkVersion 28
 
     defaultConfig {
