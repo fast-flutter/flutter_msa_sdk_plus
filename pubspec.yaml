@@ -1,6 +1,6 @@
 name: flutter_msa_sdk_plus
 description: MSA SDK for Flutter - OAID functionality for Chinese Android devices.
-version: 1.0.0
+version: 1.0.0+1
 homepage: https://github.com/fast-flutter/flutter_msa_sdk_plus
 
 environment:
