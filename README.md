@@ -51,6 +51,26 @@ String oaid = await FlutterMsaSdkPlus().getOAID();
 This plugin uses the following Android dependencies:
 - `com.gitee.li_yu_jiang:Android_CN_OAID:4.1.0`
 
+## Supported Devices
+
+| Manufacturer or Brand            | System or Framework                                          |
+|-----------------------------|-------------------------------------------------------|
+| Huawei                        | HMS Core 2.6.2+, Google Play Service 4.0+              |
+| Honor                         | Magic UI 4/5/6, MagicOS 7.0+, Google Play Service 4.0+  |
+| XiaoMi, Redmi, BlackShark      | MIUI 10.2+, Google Play Service 4.0+                   |
+| VIVO, IQOO                     | Funtouch OS 9+, OriginOS 1.0+, Google Play Service 4.0+ |
+| OPPO, Realme                   | ColorOS 7.0+, Google Play Service 4.0+                 |
+| Samsung                       | Android 10+, Google Play Service 4.0+                  |
+| Lenovo                        | ZUI 11.4+, Google Play Service 4.0+                    |
+| Asus                          | Android 10+, Google Play Service 4.0+                  |
+| Meizu                         | Android 10+, Google Play Service 4.0+                  |
+| OnePlus                       | Android 10+, Google Play Service 4.0+                  |
+| Nubia                         | Android 10+, Google Play Service 4.0+                  |
+| Coolpad                       | CoolOS, Google Play Service 4.0+                       |
+| Coosea                        | Android 10+, Google Play Service 4.0+                  |
+| Droi                          | Freeme OS, Google Play Service 4.0+                    |
+| Other (ZTE, HTC, Motorola, ...) | SSUI, Google Play Service 4.0+                         |
+
 ## License
 
 The MIT License.
