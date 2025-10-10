@@ -16,7 +16,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_msa_sdk_plus: ^1.0.0
+  flutter_msa_sdk_plus: ^4.1.0+2
 ```
 
 ## Usage
